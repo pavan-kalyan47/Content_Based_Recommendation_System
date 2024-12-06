@@ -18,16 +18,17 @@ MovieLens - 32M
 #### Tags: Processed using text vectorization techniques like Term Frequency-Inverse Document Frequency (TF-IDF), which assigns weights to words based on their importance in describing a movie.
 ### b. Similarity Calculation
 Cosine Similarity: Measures the cosine of the angle between two feature vectors. Higher similarity values indicate that two movies are closely related in terms of their features.
-c. Recommendation
-Find the most similar movies by sorting similarity scores and selecting the top matches.
-3. KNN-Based Approach
-This method uses the K-Nearest Neighbors (KNN) algorithm to recommend movies.
+### c. Recommendation
+#### Find the most similar movies by sorting similarity scores and selecting the top matches.
 
-a. Feature Preparation
-The same features (genres, tags, ratings) are extracted and processed as in the non-KNN approach.
-Additionally, numerical features like ratings are scaled to ensure uniformity across all features.
-b. KNN Algorithm
-K-Nearest Neighbors (KNN): An unsupervised learning algorithm that identifies the k closest neighbors to a given movie based on a chosen similarity metric (e.g., cosine distance).
-The model is trained on the feature matrix, enabling it to quickly find similar movies for a given input.
-c. Recommendation
-Retrieve the k most similar movies from the trained KNN model.
+# KNN-Based Approach
+#### This method uses the K-Nearest Neighbors (KNN) algorithm to recommend movies.
+
+### a. Feature Preparation
+#### The same features (genres, tags, ratings) are extracted and processed as in the non-KNN approach.
+#### Additionally, numerical features like ratings are scaled to ensure uniformity across all features.
+### b. KNN Algorithm
+#### K-Nearest Neighbors (KNN): An unsupervised learning algorithm that identifies the k closest neighbors to a given movie based on a chosen similarity metric (e.g., cosine distance).
+#### The model is trained on the feature matrix, enabling it to quickly find similar movies for a given input.
+### c. Recommendation
+#### Retrieving the k most similar movies from the trained KNN model.
